@@ -1,17 +1,17 @@
 #!/bin/sh
+
+# ***** THIS IS A GENERATED FILE. *****
+# DO NOT EDIT HERE OR IT MAY BE OVERWRITTEN. EDIT *.config.m4 OR *.m4 TO MAKE
+# CHANGES TO THE CONFIGURATION OR THE SCRIPT AS NEEDED AND RERUN 'make'.
+# *************************************
+
 ### BEGIN INIT INFO
-# Provides:
-# Required-Start:    $remote_fs $syslog
-# Required-Stop:     $remote_fs $syslog
-# Default-Start:     2 3 4 5
-# Default-Stop:      0 1 6
-# Short-Description: Start daemon at boot time
-# Description:       Enable service provided by daemon.
+__LSB_INIT_INFO
 ### END INIT INFO
 
-dir=""
-cmd=""
-user=""
+dir="__WORKINGDIR"
+cmd="__CMD"
+user="__CMDUSER"
 
 name=`basename $0`
 pid_file="/var/run/$name.pid"
