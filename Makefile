@@ -1,6 +1,8 @@
 SHELL := /bin/sh
+BUILDDIR ?= .
+TEMPLATEDIR ?= .
 
 .PHONY:
 
-%.sh: %.config.m4 template.m4
+$(BUILDDIR)/%.sh: $(BUILDDIR)/%.config.m4 $(TEMPLATEDIR)/template.m4
 	m4 -P $^ >$@
